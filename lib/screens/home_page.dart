@@ -164,13 +164,13 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Pallete.firstSuggestionBoxColor,
         onPressed: () async {
+           openAIService.isArtPromptAPI("Give me an immage of a unicorn");
           if (await speechToText.hasPermission && !speechToText.isListening) {
             debugPrint("Start Listening");
             await startListening();
           } else if (speechToText.isListening) {
             debugPrint("Stop Listening");
             await stopListening();
-            
           } else {
             initSpeechToText();
           }

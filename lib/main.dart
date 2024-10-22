@@ -4,7 +4,7 @@ import 'package:voice_assistant_chat/widgets/pallet.dart';
 import 'package:voice_assistant_chat/screens/home_page.dart';
 
 void main() async {
-  await dotenv.load(fileName: ".env");
+  await dotenv.load(fileName: '.env');
   runApp(const MainApp());
 }
 

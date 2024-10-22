@@ -23,6 +23,7 @@ flutter:
   assets:
     - assets/images/
     - assets/sounds/
+    - .env
 
   fonts:
     - family: Cera Pro
