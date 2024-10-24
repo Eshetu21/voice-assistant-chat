@@ -35,10 +35,6 @@ class OpenAIService {
         String assistantReply = jsonResponse['choices'][0]['message']['content'];
         print('AI Response: $assistantReply');
         return assistantReply;
-      } else if (response.statusCode == 429) {
-        print('Rate limited, retrying in $retryDelay...');
-        await Future.delayed(retryDelay);
-        retryCount++;
       } else {
         print('Failed with status code: ${response.statusCode}');
         final jsonResponse = jsonDecode(response.body);
