@@ -1,4 +1,4 @@
-# voice_assistant_chat
+# Voice Assistant Chat
 
 A new Flutter project.
 
